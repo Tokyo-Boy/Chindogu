@@ -2,28 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Chindogu Museum 💡</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
+    <div class="wrapper">
         <header>
             <h1>CHINDOGU<span>MUSEUM</span></h1>
-            <p>Click an invention to see the "genius" details.</p>
+            <p>Tap an invention for details!</p>
         </header>
 
         <div id="invention-grid" class="grid"></div>
     </div>
 
     <div id="modal" class="modal">
+        <div class="modal-overlay"></div>
         <div class="modal-content">
             <span class="close-btn">&times;</span>
             <img id="modal-img" src="" alt="">
-            <h2 id="modal-name"></h2>
-            <p id="modal-desc"></p>
+            <div class="text-box">
+                <h2 id="modal-name"></h2>
+                <p id="modal-desc"></p>
+            </div>
         </div>
     </div>
 
